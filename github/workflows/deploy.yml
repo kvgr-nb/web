@@ -11,4 +11,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./25215250232陈钧荣 # 目标子文件夹的路径
+          publish_dir: ./25215250232陈钧荣
+          force_orphan: true # 强制gh-pages分支为独立分支，避免历史文件干扰
