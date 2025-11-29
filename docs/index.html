@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- 视口设置：确保移动端适配，宽度=设备宽度，初始缩放1.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小兔鲜儿-新鲜·亲民·快捷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部深色导航栏：用户登录/注册/订单等入口 -->
+  <header class="top-nav">
+    <div class="container"> <!-- 容器：固定宽度居中，统一页面布局 -->
+      <ul class="top-nav-list">
+        <li><a href="#">25215250232陈钧荣，已登录</a></li>
+        <li><a href="#">免费注册</a></li>
+        <li><a href="#">我的订单</a></li>
+        <li><a href="#">会员中心</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="#">在线客服</a></li>
+        <li><a href="#">手机版</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 主导航栏：品牌logo+分类导航+搜索+购物车 -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="小兔鲜儿logo">
+      </a>
+      <!-- 分类导航菜单：商品一级分类入口 -->
+      <ul class="nav-menu">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">生鲜</a></li>
+        <li><a href="#">美食</a></li>
+        <li><a href="#">餐厨</a></li>
+        <li><a href="#">电器</a></li>
+        <li><a href="#">居家</a></li>
+        <li><a href="#">洗护</a></li>
+        <li><a href="#">孕婴</a></li>
+        <li><a href="#">服装</a></li>
+      </ul>
+      <!-- 搜索框+购物车：用户搜索和购物功能 -->
+      <div class="search-cart">
+        <input type="text" placeholder="搜一搜" class="search-input"> <!-- 搜索输入框 -->
+        <a href="#" class="cart-icon"> <!-- 购物车图标 -->
+          <img src="uploads/购物 车1.png" alt="购物车">
+          <span class="cart-count">2</span> <!-- 购物车商品数量 -->
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 轮播区 + 左侧分类：核心视觉区+二级分类导航 -->
+  <section class="banner-section">
+    <div class="container">
+      <!-- 左侧分类菜单：二级分类导航，hover高亮 -->
+      <div class="category-menu">
+        <ul>
+          <li><a href="#">生鲜 <span>水果 蔬菜</span></a></li> <!-- 主分类+子分类 -->
+          <li><a href="#">美食 <span>面点 干果</span></a></li>
+          <li><a href="#">餐厨 <span>数码产品</span></a></li>
+          <li><a href="#">电器 <span>床品 四件套 被枕</span></a></li>
+          <li><a href="#">居家 <span>奶粉 玩具 辅食</span></a></li>
+          <li><a href="#">洗护 <span>洗发 洗护 美妆</span></a></li>
+          <li><a href="#">孕婴 <span>奶粉 玩具</span></a></li>
+          <li><a href="#">服饰 <span>女装 男装</span></a></li>
+          <li><a href="#">杂货 <span>户外 图书</span></a></li>
+          <li><a href="#">品牌 <span>品牌制造</span></a></li>
+        </ul>
+      </div>
+      <!-- 轮播图：核心广告展示区，自动切换+手动控制 -->
+      <div class="banner-slider">
+        <div class="slider-wrapper"> <!-- 轮播图容器：用于图片切换定位 -->
+          <!-- 配图位置：夏日主题轮播图（建议尺寸960x500px，主视觉图） -->
+          <img src="uploads/首页-自然造物 Made in Nature-淘宝网.png" alt="自然造物" class="slider-img active">
+          <!-- 可添加更多轮播图（如促销活动图），通过JS控制切换 -->
+        </div>
+        <!-- 左右切换按钮：手动控制轮播方向 -->
+        <button class="slider-btn left">&lt;</button>
+        <button class="slider-btn right">&gt;</button>
+        <!-- 轮播指示器：显示当前轮播位置，点击切换 -->
+        <div class="slider-dots">
+          <span class="dot active"></span> <!-- 激活状态：对应当前轮播图 -->
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新鲜好物区：新品推荐，横向排列4个商品 -->
+  <section class="fresh-goods">
+    <div class="container">
+      <!-- 区域标题：含主标题+副标题+查看全部入口 -->
+      <div class="section-header">
+        <div>
+          <h2>新鲜好物</h2>
+          <p>新鲜出炉 品质靠谱</p>
+        </div>
+        <a href="#" class="view-all">查看全部 &gt;</a> <!-- 跳转至完整列表 -->
+      </div>
+      <!-- 商品列表：横向排列4个新品卡片 -->
+      <div class="goods-list">
+        <div class="goods-item"> <!-- 商品卡片1 -->
+          <img src="uploads/新鲜好物1.png" alt="口罩">
+          <span class="new-tag">新品</span> <!-- 新品标签 -->
+          <h3>莫兰迪色 KN95级口罩</h3> <!-- 商品名称 -->
+          <p>¥69.9</p> <!-- 商品价格 -->
+        </div>
+        <div class="goods-item"> <!-- 商品卡片2 -->
+          <img src="uploads/新鲜好物2.png" alt="木盒">
+          <span class="new-tag">新品</span>
+          <h3>红木手雕收纳盒</h3>
+          <p>¥1299</p>
+        </div>
+        <div class="goods-item"> <!-- 商品卡片3 -->
+          <img src="uploads/新鲜好物3.png" alt="多彩笔记本">
+          <span class="new-tag">新品</span>
+          <h3>多彩笔记本</h3>
+          <p>¥12.9</p>
+        </div>
+        <div class="goods-item"> <!-- 商品卡片4 -->
+          <img src="uploads/新鲜好物4.png" alt="客厅沙发">
+          <span class="new-tag">新品</span>
+          <h3>客厅沙发</h3>
+          <p>¥3399</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 人气推荐区：4个推荐模块，横向排列 -->
+  <section class="popular-recommends">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>人气推荐</h2>
+          <p>人气爆款 不容错过</p>
+        </div>
+      </div>
+      <!-- 推荐模块列表：4个主题推荐 -->
+      <div class="recommends-list">
+        <div class="recommend-item"> <!-- 推荐1：特惠推荐 -->
+          <img src="uploads/人气推荐1.png" alt="特惠推荐">
+          <h3>特惠推荐</h3>
+          <p>我猜得到 你的需要</p>
+        </div>
+        <div class="recommend-item"> <!-- 推荐2：爆款推荐 -->
+          <img src="uploads/人气推荐2.png" alt="爆款推荐">
+          <h3>爆款推荐</h3>
+          <p>人气好物推荐</p>
+        </div>
+        <div class="recommend-item"> <!-- 推荐3：场景推荐 -->
+          <img src="uploads/人气推荐3.png" alt="场景使用一站买全">
+          <h3>企业专享</h3>
+          <p>编辑精心整理推荐</p>
+        </div>
+        <div class="recommend-item"> <!-- 推荐4：领券中心 -->
+          <img src="uploads/人气推荐4.png" alt="鲜花园艺馆">
+          <h3>鲜花园艺馆</h3>
+          <p>发现更多超值优惠券</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门品牌&品类区：品牌展示+多品类商品列表 -->
+  <section class="brands-categories">
+    <div class="container">
+      <!-- 热门品牌：横向排列5个品牌logo -->
+      <div class="hot-brands">
+        <div class="section-header">
+          <div>
+            <h2>热门品牌</h2>
+            <p>国际经典 品质保证</p>
+          </div>
+        </div>
+        <div class="brands-list">
+          <img src="uploads/热门品牌1.png" alt="edition">
+          <img src="uploads/热门品牌2.png" alt="inman">
+          <img src="uploads/热门品牌3.png" alt="peacebird">
+          <img src="uploads/热门品牌4.png" alt="only">
+          <img src="uploads/热门品牌5.png" alt="osq欧莎">
+        </div>
+      </div>
+
+      <!-- 生鲜品类：左侧广告+右侧8个商品 -->
+      <div class="category-section">
+        <h2 class="category-title">生鲜</h2> <!-- 品类标题 -->
+        <!-- 品类子导航：快速筛选子分类 -->
+        <div class="category-nav">
+          <a href="#">水果</a>
+          <a href="#">蔬菜</a>
+          <a href="#">肉禽蛋</a>
+          <a href="#">海鲜水产</a>
+          <a href="#">调味海产</a>
+          <a href="#" class="view-all">查看全部 &gt;</a>
+        </div>
+        <!-- 商品网格：左侧1个大广告，右侧8个商品（2行4列） -->
+        <div class="goods-grid">
+          <div class="goods-ad">
+            <img src="uploads/商品介绍卡片生鲜.png" alt="生鲜">
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品1 -->
+            <img src="uploads/小圆饼.png" alt="小圆饼">
+            <h3>小圆饼</h3>
+            <p>240g/袋 4个装</p> <!-- 规格 -->
+            <p>¥59</p> <!-- 价格 -->
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品2 -->
+            <img src="uploads/手抓饼.png" alt="手抓饼">
+            <h3>红功夫 手抓饼</h3>
+            <p>250g/袋 5片装</p>
+            <p>¥16.8</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品3 -->
+            <img src="uploads/馒头.png" alt="红糖馒头">
+            <h3>三都港 红糖馒头</h3>
+            <p>500g/包 8个装</p>
+            <p>¥32.8</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品4 -->
+            <img src="uploads/面包.png" alt="面包">
+            <h3>渔公码头 面包</h3>
+            <p>100g/袋</p>
+            <p>¥8.8</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品5 -->
+            <img src="uploads/大福.png" alt="大福">
+            <h3>多彩大福</h3>
+            <p>5个装</p>
+            <p>¥20</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品6 -->
+            <img src="uploads/抹茶蛋糕.png" alt="抹茶蛋糕">
+            <h3>抹茶蛋糕</h3>
+            <p>200g</p>
+            <p>¥20</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品7 -->
+            <img src="uploads/巧克力.png" alt="巧克力">
+            <h3>进口巧克力</h3>
+            <p>200g/盒</p>
+            <p>¥69.9</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品8 -->
+            <img src="uploads/蜂蜜.png" alt="蜂蜜">
+            <h3>蜂蜜</h3>
+            <p>500ml/罐</p>
+            <p>¥68.8</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-section">
+        <h2 class="category-title">服饰</h2>
+        <div class="category-nav">
+          <a href="#">运动裤</a>
+          <a href="#">卫衣/套头衫</a>
+          <a href="#">运动夹克/风衣</a>
+          <a href="#">运动T恤</a>
+          <a href="#">运动套装</a>
+          <a href="#" class="view-all">查看全部 &gt;</a>
+        </div>
+        <div class="goods-grid">
+          <div class="goods-ad">
+            <img src="uploads/商品介绍卡片-服饰.png" alt="服饰广告">
+          </div>
+          <div class="goods-item"> 
+            <img src="uploads/打底衫.png" alt="打底衫">
+            <h3>女士打底衫</h3>
+            <p></p> <!-- 规格 -->
+            <p>¥59</p> <!-- 价格 -->
+          </div>
+          <div class="goods-item"> 
+            <img src="uploads/帆布鞋.png" alt="红功夫麻辣小龙虾">
+            <h3>红功夫 麻辣小龙虾</h3>
+            <p>1.5kg，4-6钱/25-32只</p>
+            <p>¥79</p>
+          </div>
+          <div class="goods-item">
+            <img src="uploads/jessyline.png" alt="三都港黄花鱼">
+            <h3>三都港 冷冻无公害黄花鱼</h3>
+            <p>700g 2条 袋装</p>
+            <p>¥49</p>
+          </div>
+          <div class="goods-item">
+            <img src="uploads/裙子.png" alt="渔公码头即食海参">
+            <h3>渔公码头 即食海参</h3>
+            <p>辽参刺参</p>
+            <p>¥899</p>
+          </div>
+          <div class="goods-item"> 
+            <img src="uploads/裤子.png" alt="越南白心火龙果">
+            <h3>越南白心火龙果</h3>
+            <p>4个装，标准果400-550g</p>
+            <p>¥20</p>
+          </div>
+          <div class="goods-item"> 
+            <img src="uploads/皮带.png" alt="广西沃柑">
+            <h3>广西沃柑</h3>
+            <p>1.5kg</p>
+            <p>¥20</p>
+          </div>
+          <div class="goods-item"> 
+            <img src="uploads/发卡.png" alt="进口牛油果">
+            <h3>进口牛油果</h3>
+            <p>6个装，单果重约130-180g</p>
+            <p>¥50</p>
+          </div>
+          <div class="goods-item"> 
+            <img src="uploads/鞋.png" alt="泰国山竹">
+            <h3>泰国进口山竹5A级</h3>
+            <p>240g/袋</p>
+            <p>¥60</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 餐厨品类（结构同生鲜） -->
+      <div class="category-section">
+        <h2 class="category-title">餐厨</h2>
+        <div class="category-nav">
+          <a href="#">餐具</a>
+          <a href="#">厨房置物架</a>
+          <a href="#">商用消毒柜</a>
+          <a href="#">饭菜罩</a>
+          <a href="#">餐桌</a>
+          <a href="#" class="view-all">查看全部 &gt;</a>
+        </div>
+        <div class="goods-grid">
+          <!-- 配图位置：餐厨广告图 -->
+          <div class="goods-ad">
+            <img src="uploads/商品介绍卡片-餐厨.png" alt="餐厨广告">
+          </div>
+                    <div class="goods-item"> <!-- 生鲜商品1 -->
+            <!-- 配图位置：三文鱼排（建议尺寸120x120px，产品图） -->
+            <img src="uploads/房间的彩虹.png" alt="美威三文鱼排">
+            <h3>美威 智利原味三文鱼排</h3>
+            <p>240g/袋 4片装</p> <!-- 规格 -->
+            <p>¥59</p> <!-- 价格 -->
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品2 -->
+            <!-- 配图位置：小龙虾（建议尺寸120x120px） -->
+            <img src="uploads/简易书桌.png" alt="红功夫麻辣小龙虾">
+            <h3>红功夫 麻辣小龙虾</h3>
+            <p>1.5kg，4-6钱/25-32只</p>
+            <p>¥79</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品3 -->
+            <!-- 配图位置：黄花鱼（建议尺寸120x120px） -->
+            <img src="uploads/花瓶.png" alt="三都港黄花鱼">
+            <h3>三都港 冷冻无公害黄花鱼</h3>
+            <p>700g 2条 袋装</p>
+            <p>¥49</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品4 -->
+            <!-- 配图位置：海参（建议尺寸120x120px） -->
+            <img src="uploads/餐具.png" alt="渔公码头即食海参">
+            <h3>渔公码头 即食海参</h3>
+            <p>辽参刺参</p>
+            <p>¥899</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品5 -->
+            <!-- 配图位置：火龙果（建议尺寸120x120px） -->
+            <img src="uploads/餐具.png" alt="越南白心火龙果">
+            <h3>越南白心火龙果</h3>
+            <p>4个装，标准果400-550g</p>
+            <p>¥20</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品6 -->
+            <!-- 配图位置：沃柑（建议尺寸120x120px） -->
+            <img src="uploads/餐盘.png" alt="广西沃柑">
+            <h3>广西沃柑</h3>
+            <p>1.5kg</p>
+            <p>¥20</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品7 -->
+            <!-- 配图位置：牛油果（建议尺寸120x120px） -->
+            <img src="uploads/茶具.png" alt="进口牛油果">
+            <h3>进口牛油果</h3>
+            <p>6个装，单果重约130-180g</p>
+            <p>¥50</p>
+          </div>
+          <div class="goods-item"> <!-- 生鲜商品8 -->
+            <!-- 配图位置：山竹（建议尺寸120x120px） -->
+            <img src="uploads/懒人花盆.png" alt="泰国山竹">
+            <h3>泰国进口山竹5A级</h3>
+            <p>240g/袋</p>
+            <p>¥60</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 最新专题：3个专题卡片横向排列 -->
+      <div class="latest-topics">
+        <div class="section-header">
+          <h2>最新专题</h2>
+          <a href="#" class="view-all">查看全部 &gt;</a>
+        </div>
+        <div class="topics-list">
+          <div class="topic-item"> <!-- 专题1 -->
+            <!-- 配图位置：专题场景图（建议尺寸380x150px，美食+居家组合） -->
+            <img src="uploads/最新专题2.png" alt="吃这些美食才不算辜负自己">
+            <p>吃这些美食才不算辜负自己</p>
+            <p>餐厨起居洗护好物 ¥29.9起</p>
+          </div>
+          <div class="topic-item"> <!-- 专题2（同专题1，原站重复展示） -->
+            <img src="uploads/最新专题3.png" alt="吃这些美食才不算辜负自己">
+            <p>吃这些美食才不算辜负自己</p>
+            <p>餐厨起居洗护好物 ¥29.9起</p>
+          </div>
+          <div class="topic-item"> <!-- 专题3（同专题1） -->
+            <img src="uploads/最新专题1.png" alt="吃这些美食才不算辜负自己">
+            <p>吃这些美食才不算辜负自己</p>
+            <p>餐厨起居洗护好物 ¥29.9起</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部区域：服务链接+功能优势+版权信息 -->
+  <footer class="footer">
+    <div class="container">
+      <!-- 服务链接区：客户服务/关注我们/APP下载/服务热线 -->
+      <div class="service-links">
+        <div class="link-group"> <!-- 客户服务 -->
+          <h3>客户服务</h3>
+          <a href="#">在线客服</a>
+          <a href="#">帮助中心</a>
+        </div>
+        <div class="link-group"> <!-- 关注我们 -->
+          <h3>关注我们</h3>
+          <a href="#">公众号</a>
+          <a href="#">微博</a>
+        </div>
+        <div class="link-group"> <!-- APP下载 -->
+          <h3>下载APP</h3>
+          <!-- 配图位置：APP下载二维码（建议尺寸80x80px） -->
+          <img src="uploads/APP二维码.png" alt="APP下载二维码">
+          <p>扫码下载APP</p>
+        </div>
+        <div class="link-group"> <!-- 服务热线 -->
+          <h3>服务热线</h3>
+          <p>400-0000-000</p>
+          <p>周一至周日 8:00-18:00</p>
+        </div>
+      </div>
+      <!-- 平台优势：价格/物流/品质 -->
+      <div class="footer-features">
+        <div class="feature-item">
+          <!-- 配图位置：价格亲民图标（建议尺寸50x50px） -->
+          <img src="uploads/价格亲民.png" alt="价格亲民">
+          <span>价格亲民</span>
+        </div>
+        <div class="feature-item">
+          <!-- 配图位置：物流快捷图标（建议尺寸50x50px） -->
+          <img src="uploads/物流快捷.png" alt="物流快捷">
+          <span>物流快捷</span>
+        </div>
+        <div class="feature-item">
+          <!-- 配图位置：品质新鲜图标（建议尺寸50x50px） -->
+          <img src="uploads/品质新鲜.png" alt="品质新鲜">
+          <span>品质新鲜</span>
+        </div>
+      </div>
+      <!-- 版权信息 -->
+      <div class="copyright">
+        <p>关于我们 | 帮助中心 | 会员服务 | 配送说明 | 商务合作 | 意见反馈 | 友情链接</p>
+        <p>Copyright © 小兔鲜儿</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
