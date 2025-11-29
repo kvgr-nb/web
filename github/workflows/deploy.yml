@@ -1,22 +1,14 @@
-name: 部署静态项目到GitHub Pages
+name: 部署到GitHub Pages
 on:
   push:
-    branches: [main] # 监听main分支的推送
+    branches: [main]
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: 安装Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20 # 匹配你的Node版本
-      - name: 安装依赖并打包
-        run: |
-          npm install
-          npm run build # Vue/React的打包命令
-      - name: 部署到gh-pages分支
+      - name: 部署目标子文件夹
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # 打包后的目录（Vue是dist，React是build）
+          publish_dir: ./25215250232陈钧荣 # 目标子文件夹的路径
