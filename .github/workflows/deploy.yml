@@ -1,0 +1,15 @@
+name: 部署到GitHub Pages
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 部署目标子文件夹
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./25215250232陈钧荣 # 确保路径与仓库内文件夹一致
+          force_orphan: true
